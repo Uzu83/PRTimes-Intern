@@ -230,3 +230,16 @@ https://gist.github.com/tohutohu/024551682a9004da286b0abd6366fa55 を参照
   * provisioning code https://github.com/x-tech5/aws-isucon-book-tutorial
 * Rust実装 https://github.com/Romira915/private-isu-rust
 * Scala実装 https://github.com/catatsuy/private-isu/pull/140
+
+
+最初のスコア平均:1068.8
+uzuengineer@Uzu3noMacBook-Air benchmarker % docker run --network host -i private-isu-benchmarker /bin/benchmarker -t http://host.docker.internal -u /opt/userdata
+{"pass":true,"score":1143,"success":996,"fail":0,"messages":[]}
+uzuengineer@Uzu3noMacBook-Air benchmarker % docker run --network host -i private-isu-benchmarker /bin/benchmarker -t http://host.docker.internal -u /opt/userdata
+{"pass":true,"score":1005,"success":868,"fail":0,"messages":[]}
+uzuengineer@Uzu3noMacBook-Air benchmarker % docker run --network host -i private-isu-benchmarker /bin/benchmarker -t http://host.docker.internal -u /opt/userdata
+{"pass":true,"score":1015,"success":878,"fail":0,"messages":[]}
+uzuengineer@Uzu3noMacBook-Air benchmarker % docker run --network host -i private-isu-benchmarker /bin/benchmarker -t http://host.docker.internal -u /opt/userdata
+{"pass":true,"score":1146,"success":999,"fail":0,"messages":[]}
+uzuengineer@Uzu3noMacBook-Air benchmarker % docker run --network host -i private-isu-benchmarker /bin/benchmarker -t http://host.docker.internal -u /opt/userdata
+{"pass":true,"score":1035,"success":898,"fail":0,"messages":[]}
