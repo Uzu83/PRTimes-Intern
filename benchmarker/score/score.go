@@ -51,7 +51,7 @@ func (s *Score) GetFails() int64 {
 
 func (s *Score) SetScore(point int64) {
 	s.Lock()
-	s.score += point + 2000
+	s.score += point
 	s.sucesses += 1
 	s.Unlock()
 }
